@@ -9,5 +9,5 @@ FROM nginx
 COPY --from=buildImage /app/build /usr/share/nginx/html
 # btw, it starts automatically
 
-
+EXPOSE 80
 
