@@ -4,7 +4,6 @@ services:
 
 before_install:
   - docker build -t dariuscrisan/docker-react -f Dockerfile.dev .
-  - npm install --save-dev @testing-library/react-native
   
 script:
   - docker run dariuscrisan/docker-react npm run test -- --coverage
